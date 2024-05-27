@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 connectDB();
 const corsOptions = {
-  origin: 'http://localhost:3000', // Allow only this origin to access
+  origin: ['https://rentify-3w66.onrender.com/', 'http://localhost:3000/'], // Allow only this origin to access
   optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
